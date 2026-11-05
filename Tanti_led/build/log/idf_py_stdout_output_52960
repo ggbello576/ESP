@@ -1,0 +1,64 @@
+[1/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/nome_progetto.c.obj
+[2/10] Linking C static library esp-idf/main/libmain.a
+[3/10] Performing build step for 'bootloader'
+[1/1] cd /home/ggbello576/Progetti/Esp/Tanti_led/build/bootloader/esp-idf/esptool_py && /home/ggbello576/.espressif/python_env/idf5.3_py3.14_env/bin/python /home/ggbello576/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/ggbello576/Progetti/Esp/Tanti_led/build/bootloader/bootloader.bin
+Bootloader binary size 0x50c0 bytes. 0x2f40 bytes (37%) free.
+[4/10] No install step for 'bootloader'
+[5/10] Completed 'bootloader'
+[6/10] Generating ld/sections.ld
+info: INFO: Symbol IDF_TARGET_LINUX defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/ggbello576/esp/esp-idf/Kconfig:78
+    /home/ggbello576/esp/esp-idf/Kconfig:162
+[7/10] Linking CXX executable nome_progetto.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.12.0
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /home/ggbello576/Progetti/Esp/Tanti_led/build/nome_progetto.bin
+[9/10] cd /home/ggbello576/Progetti/Esp/Tanti_led/build/esp-idf/esptool_py && /home/ggbello576/.espressif/python_env/idf5.3_py3.14_env/bin/python /home/ggbello576/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/ggbello576/Progetti/Esp/Tanti_led/build/partition_table/partition-table.bin /home/ggbello576/Progetti/Esp/Tanti_led/build/nome_progetto.bin
+nome_progetto.bin binary size 0x33740 bytes. Smallest app partition is 0x100000 bytes. 0xcc8c0 bytes (80%) free.
+[9/10] cd /home/ggbello576/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/ggbello576/esp/esp-idf -D "SERIAL_TOOL=/home/ggbello576/.espressif/python_env/idf5.3_py3.14_env/bin/python;;/home/ggbello576/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/ggbello576/Progetti/Esp/Tanti_led/build -P /home/ggbello576/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32s3 -p /dev/ttyACM0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dout --flash_freq 40m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 nome_progetto.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.12.0
+Serial port /dev/ttyACM0
+Connecting....
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
+Crystal is 40MHz
+USB mode: USB-Serial/JTAG
+MAC: 44:bd:8d:6c:7d:b0
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+WARNING: XMC flash chip boot-up failure detected! Running XMC25QHxxC startup flow
+WARNING: XMC flash boot-up fix failed.
+XMC flash chip boot-up fix successful!
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x00043fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 20672 bytes to 12777...
+Writing at 0x00000000... (100 %)
+Wrote 20672 bytes (12777 compressed) at 0x00000000 in 0.3 seconds (effective 572.5 kbit/s)...
+Hash of data verified.
+Compressed 210752 bytes to 109818...
+Writing at 0x00010000... (14 %)
+Writing at 0x0001cf28... (28 %)
+Writing at 0x00022d46... (42 %)
+Writing at 0x00029941... (57 %)
+Writing at 0x00030134... (71 %)
+Writing at 0x000389d8... (85 %)
+Writing at 0x0003ed16... (100 %)
+Wrote 210752 bytes (109818 compressed) at 0x00010000 in 1.5 seconds (effective 1145.6 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 682.1 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
