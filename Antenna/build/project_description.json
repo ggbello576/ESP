@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "nome_progetto",
-    "project_version":    "fb099be",
+    "project_version":    "25d77b7-dirty",
     "project_path":       "/home/ggbello576/Progetti/Esp/Antenna",
     "idf_path":           "/home/ggbello576/esp/esp-idf",
     "build_dir":          "/home/ggbello576/Progetti/Esp/Antenna/build",
@@ -1165,7 +1165,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/home/ggbello576/Progetti/Esp/Antenna/build/esp-idf/main/libmain.a",
-            "sources": [ "/home/ggbello576/Progetti/Esp/Antenna/main/nome_progetto.c" ],
+            "sources": [ "/home/ggbello576/Progetti/Esp/Antenna/main/nome_progetto.c", "/home/ggbello576/Progetti/Esp/Antenna/main/cc1101.c" ],
             "include_dirs": [ "." ]
         },
         "mbedtls": {
