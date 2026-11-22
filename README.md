@@ -1,6 +1,12 @@
-# Capri Zero
+<p align="center">
+  <img src="assets/CAPRIZERO.jpeg" alt="Capri Zero Logo" width="180" />
+</p>
 
-**Open-source modular hardware & RF cybersecurity multi-tool built from scratch on ESP32-S3.**
+<h1 align="center">Capri Zero</h1>
+
+<p align="center">
+  <strong>Open-source modular hardware & RF cybersecurity multi-tool built from scratch on ESP32-S3.</strong>
+</p>
 
 > **Status:** Active Development — Currently working on **Phase 1** (Sub-1 GHz transceiver integration & physical UI controls on breadboard).
 
@@ -9,10 +15,10 @@ Capri Zero is an embedded systems and security research platform written in **C 
 ---
 
 ## Current Hardware Prototype (Phase 1)
-* **MCU:** ESP32-S3-N16R8 (Dual-core Xtensa LX7, 16 MB Flash, 8 MB PSRAM, native USB OTG)
-* **Sub-1 GHz Radio:** TI CC1101 transceiver module (300–928 MHz over SPI)
-* **Controls:** 4-button tactile navigation interface
-* **Toolchain:** C11, ESP-IDF, CMake, FreeRTOS
+- **MCU:** ESP32-S3-N16R8 (Dual-core Xtensa LX7, 16 MB Flash, 8 MB PSRAM, native USB OTG)
+- **Sub-1 GHz Radio:** TI CC1101 transceiver module (300–928 MHz over SPI)
+- **Controls:** 4-button tactile navigation interface
+- **Toolchain:** C11, ESP-IDF, CMake, FreeRTOS
 
 ---
 
